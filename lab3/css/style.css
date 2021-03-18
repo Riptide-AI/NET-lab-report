@@ -282,12 +282,6 @@ section .content-window .text {
   line-height: 30px;
 }
 
-section .content-window .text pre {
-  -moz-tab-size: 2;
-    -o-tab-size: 2;
-       tab-size: 2;
-}
-
 section .content-window .text a {
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
@@ -417,5 +411,11 @@ ol ul, ul ol, ul ul, ol ol {
 
 .download {
   text-align: center;
+}
+
+pre {
+  -moz-tab-size: 2;
+    -o-tab-size: 2;
+       tab-size: 2;
 }
 /*# sourceMappingURL=style.css.map */
