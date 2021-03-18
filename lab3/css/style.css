@@ -282,6 +282,13 @@ section .content-window .text {
   line-height: 30px;
 }
 
+section .content-window .text a {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #1F1F1F;
+}
+
 section .content-window .text img {
   max-width: 1200px;
   margin: 20px 0;
@@ -400,5 +407,9 @@ footer div:hover a {
 
 ol ul, ul ol, ul ul, ol ol {
   margin-left: 30px;
+}
+
+.download {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

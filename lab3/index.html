@@ -26,8 +26,8 @@
       </header>
       <nav>
          <div class="nav-element"><a href="../lab1/index.html">Лабораторна 1</a></div>
-         <div class="nav-element"><a href="index.html">Лабораторна 2</a></div>
-         <div class="nav-element hidden"><a href="../lab3/index.html">Лабораторна 3</a></div>
+         <div class="nav-element"><a href="../lab2/index.html">Лабораторна 2</a></div>
+         <div class="nav-element"><a href="index.html">Лабораторна 3</a></div>
          <div class="nav-element hidden"><a href="../lab4/index.html">Лабораторна 4</a></div>
 	      <div class="nav-element hidden"><a href="../lab5/index.html">Лабораторна 5</a></div>
          <div class="nav-element hidden"><a href="../lab6/index.html">Лабораторна 6</a></div>
@@ -37,7 +37,8 @@
       </nav>
       <section>
          <div class="menu">
-            <div class="menu-item" onclick="toggle('tab-1')">Постановка задачі Лабораторної №2</div>
+            <div class="menu-item" onclick="toggle('tab-1')">Постановка задачі Лабораторної №3</div>
+            <div class="menu-item" onclick="toggle('tab-2')">Місце розташування проекту</div>
             <div class="menu-item" onclick="toggle('total')">Висновок</div>
             <div class="drop-out">
                <div class="drop-down">
@@ -50,8 +51,7 @@
                   </svg>
                </div>
                <div class="container">
-                  <div class="drop-bar" onclick="toggle('drop-1')">Таблиця класів</div>
-                  <div class="drop-bar" onclick="toggle('drop-2')">UML-діагарма класів</div>
+                  <div class="drop-bar" onclick="toggle('drop-1')">UML-діаграма класів</div>
                </div>
             </div>
             <div class="drop-out">
@@ -65,9 +65,9 @@
                   </svg>
                </div>
                <div class="container">
+                  <div class="drop-bar" onclick="toggle('drop-2')">Класи з описом властивостей закритих полів</div>
                   <div class="drop-bar" onclick="toggle('drop-3')">Файлова структура проекту</div>
-                  <div class="drop-bar" onclick="toggle('drop-4')">Коди класів з конструкторами</div>
-                  <div class="drop-bar" onclick="toggle('drop-5')">Код класу Program та результат</div>
+                  <div class="drop-bar" onclick="toggle('drop-4')">Код всіх файлів та результат програми</div>
                </div>
             </div>
             <div class="drop-out">
@@ -81,8 +81,8 @@
                   </svg>
                </div>
                <div class="container">
-                  <div class="drop-bar" onclick="toggle('drop-6')">Папка з проектом</div>
-                  <div class="drop-bar" onclick="toggle('drop-7')">Запуск .exe файлу</div>
+                  <div class="drop-bar" onclick="toggle('drop-5')">Папка з проектом</div>
+                  <div class="drop-bar" onclick="toggle('drop-6')">Запуск .exe файлу</div>
                </div>
             </div>
 
@@ -108,20 +108,21 @@
                <p> 
                   <b>Тема та постановка задачі:</b> <br> <br>
       
-                  Тема: КОНСТРУКТОРИ.МОДИФИКАТОРЫ ДОСТУПУ В C# И UML. ДІАГРАМИ КЛАСІВ. ВІДНОШЕННЯ МІЖ КЛАСАМИ <br> <br>
+                  ВИКОРИСТАННЯ ВЛАСТИВОСТЕЙ.  АВТОМАТИЧНІ ВЛАСТИВОСТІ. СКОРОЧЕНИЙ ЗАПИС ВЛАСТИВОСТЕЙ <br> <br>
                   
-                  Мета: Здійснити об’єктно-орієнтоване проектування з урахуванням модифікаторів доступу в C# и UML і добавлення конструкторів у діаграму класів та реалізація їх у програмному коді. 
-                  Вивчити особливості використання різних видів конструкторів. Доповнити програму конструкторами різних видів.<br> <br>
+                  Мета: Здійснити введення та виведення даних закритих полів класів, застосовуючі методи-властивості.<br> <br>
                   
                   Постановка задачі: <br> <br>
       
-                     1. Доповнити інтерфейси та реалізації класів методами-конструкторами класів (використати конструктори по умовчанню, ініціалізації (введення значень з клавіатури, завдання їх за виразами та через виклик інших методів-членів класу).  <br>
-                     2.	Протестувати програму, демонструючи послідовність викликів конструкторів виведенням на екран повідомлень про створення об’єктів <br>
-                     3.	Продемонструвати створення об’єктів за допомогою різних видів конструкторів: <br> <br>
-                     
-                        - через ініціалізацію значень атрибутів класів списком аргументів, використовуючи конструктор ініціалізації; <br>
-                        - через присвоєння одних об’єктів іншим того самого типу, використовуючи конструктор копіювання; <br>
-                        - створення об’єкта за допомогою конструктора за замовчуванням. <br>        
+                     1. Доповнити програмну реалізацію класів методами-властивостями класів, введення та виведення даних закритих полів класів<br> <br>
+                     2.	Протестувати програму, шляхом запуску програми, введенням та виведенням значень закритих полів.<br>
+               </p>
+            </div>
+         </div>
+         <div class="content-window" id="tab-2">
+            <div class="text">
+               <p class="download"> 
+                  <a href="https://github.com/FeltMe/ZooClinic" target="blink">Посилання на Github з проектом</a>
                </p>
             </div>
          </div>
@@ -155,12 +156,7 @@
                <p>drop-6</p>
             </div>
          </div>
-         <div class="content-window" id="drop-7">
-            <div class="text">
-               <p>drop-7</p>
-            </div>
-         </div>
-         
+
 
       </section>
    </div>
