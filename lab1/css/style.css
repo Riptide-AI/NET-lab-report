@@ -8,6 +8,9 @@
 body {
   background-color: #EBEBEB;
 }
+a{
+  text-decoration: none;
+}
 
 .wrapper {
   width: 100%;
