@@ -141,20 +141,20 @@
          </div>
          <div class="content-window" id="drop-4">
             <div class="text">
-               <p>static public Patient operator ++(Patient pat)
-		{
-			pat.Age++;
-			return pat;
+               <p>static public Patient operator ++(Patient pat)<br>
+		{<br>
+			pat.Age++;<br>
+			return pat;<br>
 		}
 </p>
             </div>
          </div>
          <div class="content-window" id="drop-5">
             <div class="text">
-               <p>static public Cabinet operator ~(Cabinet cab)
-		{
-			cab.Status = !cab.Status;
-			return cab;
+               <p>static public Cabinet operator ~(Cabinet cab)<br>
+		{<br>
+			cab.Status = !cab.Status;<br>
+			return cab;<br>
 		}
 </p>
             </div>
@@ -162,21 +162,21 @@
          <div class="content-window" id="drop-6">
             <div class="text">
                <p>// logichniy
-		static public Person operator ^(Person per1, Person per2)
-		{
-			return new Person(per1.Name, per1.Surname, per1.Age ^ per2.Age, per1.Birthday);
+		static public Person operator ^(Person per1, Person per2)<br>
+		{<br>
+			return new Person(per1.Name, per1.Surname, per1.Age ^ per2.Age, per1.Birthday);<br>
 
-		}
-// porivnyanya
-		static public bool operator <(MedicalStaff med1, MedicalStaff med2)
-		{
-			return med1.Cabinet < med2.Cabinet;
-		}
+		}<br>
+// porivnyanya<br>
+		static public bool operator <(MedicalStaff med1, MedicalStaff med2)<br>
+		{<br>
+			return med1.Cabinet < med2.Cabinet;<br>
+		}<br>
 
-// porivnyanya
-		static public bool operator >(MedicalStaff med1, MedicalStaff med2)
-		{
-			return med1.Cabinet > med2.Cabinet;
+// porivnyanya<br>
+		static public bool operator >(MedicalStaff med1, MedicalStaff med2)<br>
+		{<br>
+			return med1.Cabinet > med2.Cabinet;<br>
 		}
 </p>
             </div>
