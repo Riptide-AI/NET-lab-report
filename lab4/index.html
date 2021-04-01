@@ -66,8 +66,10 @@
                </div>
                <div class="container">
                   <div class="drop-bar" onclick="toggle('drop-3')">Файлова структура проекту</div>
-                  <div class="drop-bar" onclick="toggle('drop-4')">Коди класів з конструкторами</div>
-                  <div class="drop-bar" onclick="toggle('drop-5')">Код класу Program та результат</div>
+                  <div class="drop-bar" onclick="toggle('drop-4')">Методи перевантаження унарних операторів</div>
+                  <div class="drop-bar" onclick="toggle('drop-5')">Методи перевантаження бінарних операторів</div>
+		  <div class="drop-bar" onclick="toggle('drop-6')">Методи перевантаження логічних операторів та операторів порівняння</div>	  
+		  <div class="drop-bar" onclick="toggle('drop-7')">Код класу Program та результат</div>	  
                </div>
             </div>
             <div class="drop-out">
@@ -81,8 +83,8 @@
                   </svg>
                </div>
                <div class="container">
-                  <div class="drop-bar" onclick="toggle('drop-6')">Папка з проектом</div>
-                  <div class="drop-bar" onclick="toggle('drop-7')">Запуск .exe файлу</div>
+                  <div class="drop-bar" onclick="toggle('drop-8')">Папка з проектом</div>
+                  <div class="drop-bar" onclick="toggle('drop-9')">Запуск .exe файлу</div>
                </div>
             </div>
 
@@ -139,22 +141,59 @@
          </div>
          <div class="content-window" id="drop-4">
             <div class="text">
-               <p>drop-4</p>
+               <p>static public Patient operator ++(Patient pat)
+		{
+			pat.Age++;
+			return pat;
+		}
+</p>
             </div>
          </div>
          <div class="content-window" id="drop-5">
             <div class="text">
-               <p>drop-5</p>
+               <p>static public Cabinet operator ~(Cabinet cab)
+		{
+			cab.Status = !cab.Status;
+			return cab;
+		}
+</p>
             </div>
          </div>
          <div class="content-window" id="drop-6">
             <div class="text">
-               <p>drop-6</p>
+               <p>// logichniy
+		static public Person operator ^(Person per1, Person per2)
+		{
+			return new Person(per1.Name, per1.Surname, per1.Age ^ per2.Age, per1.Birthday);
+
+		}
+// porivnyanya
+		static public bool operator <(MedicalStaff med1, MedicalStaff med2)
+		{
+			return med1.Cabinet < med2.Cabinet;
+		}
+
+// porivnyanya
+		static public bool operator >(MedicalStaff med1, MedicalStaff med2)
+		{
+			return med1.Cabinet > med2.Cabinet;
+		}
+</p>
             </div>
          </div>
          <div class="content-window" id="drop-7">
             <div class="text">
                <p>drop-7</p>
+            </div>
+         </div>
+	 <div class="content-window" id="drop-8">
+            <div class="text">
+               <p>drop-8</p>
+            </div>
+         </div>
+	 <div class="content-window" id="drop-9">
+            <div class="text">
+               <p>drop-9</p>
             </div>
          </div>
          
