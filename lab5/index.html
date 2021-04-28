@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <script src="scripts/script.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   
+   <script src='scripts/main.js'></script>  <!--jQuery-->
+
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+   <title>Report-page</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header>
+         <div class="container">
+            <p class="title">Звіти з лабораторних робіт</p> <br>
+            <p class="title">з дисципліни «Основи розробки програмного забезпечення на платформі .NET»</p>
+            <br>
+            <p>Роботу виконали студенти групи <b>ІА-93</b></p>
+         </div>
+      </header>
+      <nav>
+         <div class="nav-element"><a href="../lab1/index.html">Лабораторна 1</a></div>
+         <div class="nav-element"><a href="index.html">Лабораторна 2</a></div>
+         <div class="nav-element"><a href="../lab3/index.html">Лабораторна 3</a></div>
+         <div class="nav-element"><a href="../lab4/index.html">Лабораторна 4</a></div>
+	      <div class="nav-element"><a href="../lab5/index.html">Лабораторна 5</a></div>
+         <div class="nav-element hidden"><a href="../lab6/index.html">Лабораторна 6</a></div>
+         <div class="nav-element hidden"><a href="../lab7/index.html">Лабораторна 7</a></div>
+         <div class="nav-element hidden"><a href="../lab8/index.html">Лабораторна 8</a></div>
+         <div class="nav-element hidden"><a href="../lab9/index.html">Лабораторна 9</a></div>
+      </nav>
+      <section>
+         <div class="menu">
+            <div class="menu-item" onclick="toggle('tab-1')">Постановка задачі Лабораторної №5</div>
+            <div class="menu-item" onclick="toggle('total')">Висновок</div>
+            <div class="drop-out">
+               <div class="drop-down">
+                  <p>Проектування структури ПЗ</p>
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                     width="25" viewBox="0 0 32 32">
+                     <path class="svg" d="M28.2,1.7l-1.4-1.4C26.6,0.1,26.4,0,26.1,0c-0.2,0-0.5,0.1-0.7,0.3L14.2,11.5L3,0.3C2.8,0.1,2.6,0,2.4,0
+                           C2.1,0,1.9,0.1,1.7,0.3L0.3,1.7C0.1,1.9,0,2.1,0,2.4C0,2.6,0.1,2.8,0.3,3l13.3,13.3c0.2,0.2,0.4,0.3,0.7,0.3c0.2,0,0.5-0.1,0.7-0.3
+                           L28.2,3c0.2-0.2,0.3-0.4,0.3-0.7C28.5,2.1,28.4,1.9,28.2,1.7z" />
+                  </svg>
+               </div>
+               <div class="container">
+                  <div class="drop-bar" onclick="toggle('drop-1')" style="display: none;">Таблиця класів</div>
+                  <div class="drop-bar" onclick="toggle('drop-2')">UML-діагарма класів</div>
+               </div>
+            </div>
+            <div class="drop-out">
+               <div class="drop-down">
+                  <p>Кодування ПЗ (програмування)</p>
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                     width="25" viewBox="0 0 32 32">
+                     <path class="svg" d="M28.2,1.7l-1.4-1.4C26.6,0.1,26.4,0,26.1,0c-0.2,0-0.5,0.1-0.7,0.3L14.2,11.5L3,0.3C2.8,0.1,2.6,0,2.4,0
+                           C2.1,0,1.9,0.1,1.7,0.3L0.3,1.7C0.1,1.9,0,2.1,0,2.4C0,2.6,0.1,2.8,0.3,3l13.3,13.3c0.2,0.2,0.4,0.3,0.7,0.3c0.2,0,0.5-0.1,0.7-0.3
+                           L28.2,3c0.2-0.2,0.3-0.4,0.3-0.7C28.5,2.1,28.4,1.9,28.2,1.7z" />
+                  </svg>
+               </div>
+               <div class="container">
+                  <div class="drop-bar" onclick="toggle('drop-3')">Файлова структура проекту</div>
+                  <div class="drop-bar" onclick="toggle('drop-4')">Базові та похідні класи.<br> Абстрактні класи та віртуальні методи</div>
+                  <div class="drop-bar" onclick="toggle('drop-5')">Upcasting - Downcasting</div>
+		  <div class="drop-bar" onclick="toggle('drop-6')">Інтерфейси.<br>Узагальнені класи і методи</div>	  
+               </div>
+            </div>
+            <div class="drop-out">
+               <div class="drop-down">
+                  <p>Впровадження ПЗ</p>
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                     width="25" viewBox="0 0 32 32">
+                     <path class="svg" d="M28.2,1.7l-1.4-1.4C26.6,0.1,26.4,0,26.1,0c-0.2,0-0.5,0.1-0.7,0.3L14.2,11.5L3,0.3C2.8,0.1,2.6,0,2.4,0
+                           C2.1,0,1.9,0.1,1.7,0.3L0.3,1.7C0.1,1.9,0,2.1,0,2.4C0,2.6,0.1,2.8,0.3,3l13.3,13.3c0.2,0.2,0.4,0.3,0.7,0.3c0.2,0,0.5-0.1,0.7-0.3
+                           L28.2,3c0.2-0.2,0.3-0.4,0.3-0.7C28.5,2.1,28.4,1.9,28.2,1.7z" />
+                  </svg>
+               </div>
+               <div class="container">
+                  <div class="drop-bar" onclick="toggle('drop-7')">Папка з проектом</div>
+                  <div class="drop-bar" onclick="toggle('drop-8')">Запуск .exe файлу</div>
+               </div>
+            </div>
+
+            
+         </div>
+
+         <div class="content-window" id="start-window">
+               <p>Start<!--Here write any code you want to show as a report--></p>
+         </div>
+
+
+         
+         <div class="content-window" id="total">
+            <div class="text">
+               <p>
+                  У даній лабораторній роботі, ми навчилися створювати реалізацію методів перевантаження унарних, бінарних, логічних операторів, операторів порівняння на платформі .NET. 
+Також ми відпрацювали матеріал перевантаження операторів та зрозуміли їх переваги.  
+
+               </p>
+            </div>
+         </div>
+         <div class="content-window" id="tab-1">
+
+            <div class="text">
+               <p> 
+                  <b>Тема та постановка задачі:</b> <br> <br>
+      
+                  Тема: УСПАДКУВАННЯ. АБСТАКТНІ КЛАСИ. ІНТЕРФЕЙСИ <br> <br>
+                  
+                  Мета: придбати практичні навички роботи  створення базоаового та похідних класів, перевизначення методів у класі, методів перевантаження унарних, бінарних, логічних операторів, операторів порівняння.
+
+                  <br> <br>
+                  
+                  Постановка задачі: <br> <br>
+      
+                     1.Доповнити програмну реалізацію класів методами для перевантаження унарних, бінарних, логічних операторів, операторів порівняння.<br>
+		     2.Протестувати програму. Зробити висновки.
+         		</p>
+            </div>
+         </div>
+         <div class="content-window" id="drop-1">
+            <div class="text">
+              <p>drop-1</p>
+            </div>
+         </div>
+         <div class="content-window" id="drop-2">
+            <div class="text">
+               drop-2
+            </div>
+         </div>
+         <div class="content-window" id="drop-3">
+            <div class="text">
+               drop-3
+            </div>
+         </div>
+         <div class="content-window" id="drop-4">
+            <div class="text">
+               drop-4
+               <pre>
+		</pre>
+		<img src="sources/img/unarniy.jpg" alt="">
+            </div>
+         </div>
+         <div class="content-window" id="drop-5">
+            <div class="text">
+               drop-5
+               <pre>
+		</pre>
+		<img src="sources/img/binary.jpg" alt="">
+            </div>
+         </div>
+         <div class="content-window" id="drop-6">
+            <div class="text">
+               drop-6
+               <pre>
+		</pre>
+		<img src="sources/img/logichniy.jpg" alt="">
+		<img src="sources/img/porivniannia.jpg" alt="">
+            </div>
+         </div>
+         <div class="content-window" id="drop-7">
+            <div class="text">
+               <p class="download"> 
+                  <a href="https://github.com/FeltMe/ZooClinic" target="blink">Посилання на Github з проектом</a><br>
+	          Середовище розробки Visual Studio  
+               </p>
+            </div>
+         </div>
+	 <div class="content-window" id="drop-8">
+            <div class="text">
+               drop-8
+            </div>
+         </div>
+	 
+         
+
+      </section>
+   </div>
+   <footer>
+      <div><a href="../index.html">2021 рік</a></div>
+   </footer>
+</body>
+
+</html>
