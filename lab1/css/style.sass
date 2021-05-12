@@ -76,6 +76,7 @@ nav
             transition-duration: .3s
 section
    padding: 30px 
+   margin-bottom: 40px
    display: flex
    height: 100%
    .menu
@@ -100,7 +101,7 @@ section
             color: $highlighted-light
       .drop-out 
          width: 100%
-         margin-bottom: 20px 
+         margin-top: 20px 
          background-color: $windows-color
          cursor: pointer
          text-transform: capitalize
@@ -110,7 +111,6 @@ section
          align-items: center
          justify-content: space-around
          flex-direction: column
-            
          .drop-down
             flex-basis: 60px
             width: 100%
@@ -121,14 +121,33 @@ section
             background-color: $text-default-color
             position: relative
             cursor: default
-            svg
-               fill: $windows-color
-               position: absolute
-               top: 25px
-               right: 25px
+            &:hover
+               color: $highlighted-light
                cursor: pointer
-               &:hover
-                  fill: $highlighted-light
+            &::after
+               transition-duration: .3s 
+               transition-property: border-color transform
+               cursor: pointer
+               content: ''
+               height: 15px
+               width: 15px 
+               top: 50%
+               border-radius: 2px
+               transform: translateY(-65%) rotate(45deg)
+               position: absolute
+               right: 20px
+               border: 3px solid $background-color
+               border-top: none
+               border-left: none
+         .open-drop
+            color: $highlighted-light
+            &::after
+               transition-duration: .3s 
+               transition-property: border-color transform
+               transform: translateY(-30%) rotate(225deg)
+               border: 3px solid $highlighted-light
+               border-top: none
+               border-left: none
          .container
             width: 100%
             height: 100%
@@ -152,7 +171,7 @@ section
       display: none
       flex-direction: column
       overflow: auto
-      height: 630px
+      height: 600px
 
       .code
          display: flex
@@ -172,10 +191,6 @@ section
          font-family: Arial, sans-serif
          margin: 0 auto
          line-height: 30px
-         a
-            text-decoration: none
-            @include main-text
-            color: $text-default-color
          img
             max-width: 1200px
             margin: 20px 0
@@ -210,8 +225,10 @@ section
             width: 100%
       
 footer
+   bottom: 0
+   position: fixed
    width: 100%
-   height: 5vh 
+   padding: 5px
    background-color: $background-color
    box-shadow: 0px 0px 5px rgba(0,0,0,0.5)
    display: flex
@@ -247,3 +264,5 @@ ol ul, ul ol, ul ul, ol ol
    margin-left: 30px
 .download
    text-align: center
+pre
+   tab-size: 2
